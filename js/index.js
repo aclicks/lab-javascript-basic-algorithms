@@ -1,6 +1,6 @@
 console.log("I'm ready!");
 // Iteration 1: Names and Input
-const hacker1 = "Zed";
+const hacker1 = "André";
 console.log(`The driver's name is ${hacker1}`);
 const hacker2 = "Mariana";
 console.log(`The navigator's name is ${hacker2}`);
