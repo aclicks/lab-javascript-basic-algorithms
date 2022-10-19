@@ -37,6 +37,25 @@ else if (names[0] === hacker1){
 }
 else if(names[0] === hacker2){
 console.log(`Yo, the navigator goes first definitely`);
-
 }
-    
+
+// parágrafos lorem ipsum
+const paragraphs = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum lectus arcu. Donec placerat, erat et dapibus suscipit, nibh nisl consectetur magna, in eleifend felis quam vitae turpis. Duis hendrerit ex id cursus gravida. Maecenas vel libero nec magna blandit lacinia ac et lacus. Proin sed urna a eros vestibulum pellentesque ac laoreet erat. Sed velit nunc, sagittis facilisis laoreet hendrerit, pellentesque quis tortor. Fusce convallis ligula at placerat dignissim. Duis ac enim sed sapien tincidunt interdum vitae in felis. Sed nec egestas nunc. Pellentesque finibus mauris a ligula ullamcorper aliquet. Fusce nec massa turpis. Praesent eu dui id risus blandit mattis. Integer interdum finibus nisl sit amet congue. Phasellus eu ipsum tortor. Sed porttitor mi arcu, consequat dapibus orci auctor vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc sem quam, efficitur eget fermentum nec, vehicula suscipit ante. Aenean interdum posuere convallis. Maecenas ac lectus urna. Maecenas accumsan blandit purus ut molestie. Etiam fringilla eros ut accumsan commodo. Ut at lacus sapien. Donec nisi dolor, aliquet et nulla id, laoreet vestibulum diam. Pellentesque a lorem eu sapien pretium commodo. Morbi eu sem varius, euismod lacus sed, vulputate ante. Aenean pharetra vestibulum metus, sed vehicula est posuere eget. Etiam lacinia eget lectus in ultrices. Phasellus laoreet rutrum risus id feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel cursus libero. Aliquam rhoncus vitae erat sed pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec magna sit amet ligula tempor tincidunt. Proin nec vestibulum mauris.`;
+
+let numberOfWords = 1; //começa em 1 por conta da última palavra que não tem espaço
+for (let i = 0; i < paragraphs.length; i++){
+    if (paragraphs[i] === " "){
+        numberOfWords += 1; 
+    }
+}
+console.log(`There are ${numberOfWords} words in this paragraph`);
+
+let numberOfEt = 0;
+for (let i = 0; i < paragraphs.length; i++){
+    if (paragraphs[i] + paragraphs[i+1] + paragraphs[i+2] + paragraphs[i+3] === " et "){
+        numberOfEt += 1; 
+    }
+}
+console.log(`There are ${numberOfEt} "et" in this paragraph.`)
+
+let 
