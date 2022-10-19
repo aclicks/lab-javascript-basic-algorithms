@@ -27,6 +27,7 @@ for (let i = (hacker2.length - 1); i >= 0; i--) {
 }
 console.log (reverseNavigator);
 
+// usando array
 const names = [(hacker2), (hacker1)];
 names.sort();
 if (names[0] === names[1]){
@@ -39,7 +40,11 @@ else if(names[0] === hacker2){
 console.log(`Yo, the navigator goes first definitely`);
 }
 
-// parágrafos lorem ipsum
+//mesma função anterior sem array
+
+
+// Bonus 1
+console.log(`Bonus 1: Count words an "et"`)
 const paragraphs = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum lectus arcu. Donec placerat, erat et dapibus suscipit, nibh nisl consectetur magna, in eleifend felis quam vitae turpis. Duis hendrerit ex id cursus gravida. Maecenas vel libero nec magna blandit lacinia ac et lacus. Proin sed urna a eros vestibulum pellentesque ac laoreet erat. Sed velit nunc, sagittis facilisis laoreet hendrerit, pellentesque quis tortor. Fusce convallis ligula at placerat dignissim. Duis ac enim sed sapien tincidunt interdum vitae in felis. Sed nec egestas nunc. Pellentesque finibus mauris a ligula ullamcorper aliquet. Fusce nec massa turpis. Praesent eu dui id risus blandit mattis. Integer interdum finibus nisl sit amet congue. Phasellus eu ipsum tortor. Sed porttitor mi arcu, consequat dapibus orci auctor vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc sem quam, efficitur eget fermentum nec, vehicula suscipit ante. Aenean interdum posuere convallis. Maecenas ac lectus urna. Maecenas accumsan blandit purus ut molestie. Etiam fringilla eros ut accumsan commodo. Ut at lacus sapien. Donec nisi dolor, aliquet et nulla id, laoreet vestibulum diam. Pellentesque a lorem eu sapien pretium commodo. Morbi eu sem varius, euismod lacus sed, vulputate ante. Aenean pharetra vestibulum metus, sed vehicula est posuere eget. Etiam lacinia eget lectus in ultrices. Phasellus laoreet rutrum risus id feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel cursus libero. Aliquam rhoncus vitae erat sed pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec magna sit amet ligula tempor tincidunt. Proin nec vestibulum mauris.`;
 
 let numberOfWords = 1; //começa em 1 por conta da última palavra que não tem espaço
@@ -58,4 +63,21 @@ for (let i = 0; i < paragraphs.length; i++){
 }
 console.log(`There are ${numberOfEt} "et" in this paragraph.`)
 
-let 
+//Bonus 2
+console.log(`Bonus 2: Palindrome Check`)
+let phraseToCheck = "Was it a car or a cat I saw?";
+let phraseClean = ""
+let reversePhrase = "";
+
+for (let i = 0; i < phraseToCheck.length; i++){
+    if ((phraseToCheck[i] !== " ") && (phraseToCheck[i] !== "!") && (phraseToCheck[i] !== ",") && (phraseToCheck[i] !== "?") && (phraseToCheck[i] !== ".")){
+        phraseClean += phraseToCheck[i].toLowerCase();
+    }
+    }
+
+for (let i = (phraseClean.length - 1); i >= 0; i--) {
+    reversePhrase += phraseClean[i];
+}
+if (phraseClean === reversePhrase){
+    console.log(`"${phraseToCheck}" is a palindrome!`);
+}
