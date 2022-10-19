@@ -65,7 +65,7 @@ console.log(`There are ${numberOfWords} words in this paragraph`);
 
 let numberOfEt = 0;
 for (let i = 0; i < paragraphs.length; i++){
-    if (paragraphs[i] + paragraphs[i+1] + paragraphs[i+2] + paragraphs[i+3] === " et "){
+    if (paragraphs[i] + paragraphs[i+1] + paragraphs[i+2] + paragraphs[i+3] === " et " || paragraphs[i] + paragraphs[i+1] + paragraphs[i+2] + paragraphs[i+3] === " et," ||  paragraphs[i] + paragraphs[i+1] + paragraphs[i+2] + paragraphs[i+3] === " et."){
         numberOfEt += 1; 
     }
 }
