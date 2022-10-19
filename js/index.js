@@ -1,6 +1,6 @@
 console.log("I'm ready!");
 // Iteration 1: Names and Input
-const hacker1 = "André";
+const hacker1 = "Zed";
 console.log(`The driver's name is ${hacker1}`);
 const hacker2 = "Mariana";
 console.log(`The navigator's name is ${hacker2}`);
@@ -41,7 +41,15 @@ console.log(`Yo, the navigator goes first definitely`);
 }
 
 //mesma função anterior sem array
-
+if (hacker1.localeCompare(hacker2) === 0){
+    console.log(`What?! You both have the same name?. LocaleCompare`);
+}
+else if (hacker1.localeCompare(hacker2) < 0){
+    console.log(`The driver's name goes first. LocaleCompare`);
+}
+else if(hacker1.localeCompare(hacker2) > 0){
+console.log(`Yo, the navigator goes first definitely. LocaleCompare`);
+}
 
 // Bonus 1
 console.log(`Bonus 1: Count words an "et"`)
@@ -79,5 +87,8 @@ for (let i = (phraseClean.length - 1); i >= 0; i--) {
     reversePhrase += phraseClean[i];
 }
 if (phraseClean === reversePhrase){
-    console.log(`"${phraseToCheck}" is a palindrome!`);
+    console.log(`"${phraseToCheck}" is a palindrome :)`);
+}
+else {
+    console.log(`"${phraseToCheck}" is not a palindrome :(`);
 }
