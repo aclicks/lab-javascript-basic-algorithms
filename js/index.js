@@ -29,14 +29,14 @@ console.log (reverseNavigator);
 
 const names = [(hacker2), (hacker1)];
 names.sort();
-switch (names[0]){
-    case (names[0] === hacker1):
-    console.log(`The driver's name goes first`)
-    break;
-    case (names[0] === hacker2):
-    console.log(`Yo, the navigator goes first definitely`)
-    break;
-    case (hacker1[i] === hacker2[i]):
-    console.log()
+if (names[0] === names[1]){
+    console.log(`What?! You both have the same name?`);
+}
+else if (names[0] === hacker1){
+    console.log(`The driver's name goes first`);
+}
+else if(names[0] === hacker2){
+console.log(`Yo, the navigator goes first definitely`);
+
 }
     
